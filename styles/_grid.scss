@@ -1,0 +1,45 @@
+.top{
+  height: $base-line-height*3;
+  display: flex;
+  flex-flow: row nowrap;
+
+  .logo{
+    height: 100%;
+    width: 40%;
+  }
+
+  .slogan{
+    height: 100%;
+    width: 60%;
+  }
+}
+
+.bottom{
+  height: calc(100vh - #{$base-line-height*3});
+  height: -webkit-calc(100vh - #{$base-line-height*3});
+  height:    -moz-calc(100vh - #{$base-line-height*3});
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  &:hover .pages_list {
+    width: 5%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+
+
+  .pages_list{
+    width: 20%;
+    height: 100%;
+    opacity: 0.9;
+
+
+    &:hover{
+
+      width: 80%;
+      opacity: 1.0;
+      filter: alpha(opacity=100);
+    }
+
+  }
+}

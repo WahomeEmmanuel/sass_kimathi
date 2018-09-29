@@ -1,0 +1,86 @@
+.top{
+  background-color: $primary-color-1;
+
+  .logo{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+
+    .logo_name{
+      color: $primary-color-2;
+      font-size: $base-line-height*2;
+      padding: $base-line-height/2;
+      font-family: 'Permanent Marker', cursive;
+    }
+  }
+
+  .slogan{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: right;
+    align-items: center;
+
+    .slogan_content{
+      font-size: 30px;
+      color: $primary-color-3;
+    }
+  }
+}
+
+.bottom{
+  background-color: $secondary-color;
+  overflow: hidden;
+
+
+  .pages_list{
+    position: relative;
+    border-left: 1px solid #888;
+    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+
+    /*Transitions to give animation effect*/
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .page_title {
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      left: 0; bottom: 0;
+      width: 100%;
+
+      .title{
+        color: #fff;
+        padding: 20px;
+        font-size: $base-line-height;
+      }
+
+    }
+
+
+    &:first-child {
+      background-image: url("../images/page-1.jpg");
+    }
+    &:nth-child(2){
+      background-image: url("../images/page-2.jpg");
+    }
+    &:nth-child(3){
+      background-image: url("../images/page-3.jpg");
+    }
+    &:nth-child(4){
+      background-image: url("../images/page-4.jpg");
+    }
+    &:nth-child(5){
+      background-image: url("../images/page-5.jpg");
+    }
+
+  }
+
+
+
+}
