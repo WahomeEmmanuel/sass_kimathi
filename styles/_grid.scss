@@ -1,7 +1,6 @@
 .top{
   height: $base-line-height*3;
-  display: flex;
-  flex-flow: row nowrap;
+  @include row-flex;
 
   .logo{
     height: 100%;
@@ -19,8 +18,7 @@
   height: -webkit-calc(100vh - #{$base-line-height*3});
   height:    -moz-calc(100vh - #{$base-line-height*3});
   width: 100%;
-  display: flex;
-  flex-flow: row nowrap;
+  @include row-flex;
   &:hover .pages_list {
     width: 5%;
     opacity: 0.5;

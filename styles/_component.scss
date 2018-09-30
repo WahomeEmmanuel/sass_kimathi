@@ -2,8 +2,7 @@
   background-color: $primary-color-1;
 
   .logo{
-    display: flex;
-    flex-flow: row nowrap;
+    @include row-flex;
     align-items: center;
 
     .logo_name{
@@ -15,8 +14,7 @@
   }
 
   .slogan{
-    display: flex;
-    flex-flow: row nowrap;
+    @include row-flex;
     justify-content: right;
     align-items: center;
 
